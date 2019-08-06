@@ -205,3 +205,14 @@ Now you should be ready to start developing Rails applications in a Dockerized e
 Rails 5
 Docker
 Docker compose
+
+
+--------------------------------------------------------------------------------------
+
+rails console : docker-compose exec web rails console
+
+rails scaffold : docker-compose exec web rails generate scaffold HighScore game:string score:integer
+
+rails db migrate: docker-compose exec web rails db:migrate
+
+rails routes : docker-compose exec web rails routes
